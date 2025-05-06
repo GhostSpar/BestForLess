@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best for Less - Profile Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #07152c;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .auth-links a {
+      color: #66aaff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .auth-links a:hover {
+      text-decoration: underline;
+    }
+
+    .tagline {
+      text-align: center;
+      padding: 10px;
+      font-size: 1.2em;
+      color: #4f5d75;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      margin-top: 0;
+      color: #1f4b99;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #1f2d3d;
+    }
+
+    input, select {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #1f4b99;
+      box-shadow: 0 0 5px #66aaff;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #1f4b99;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #376ac2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background-color: #07152c;
+      color: #99aabb;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">Best for Less</div>
+    <div class="auth-links">
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </div>
+  </header>
+
+  <div class="tagline">
+    Your one-stop shop for second-hand gadgets & accessories
+  </div>
+
+  <div class="container">
+    <h2>Profile Page</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="contact">Contact Information</label>
+      <input type="text" id="contact" name="contact" placeholder="Email or Phone Number" required>
+
+      <label for="country">Country/Region</label>
+      <select id="country" name="country" disabled>
+        <option selected>Malaysia</option>
+      </select>
+
+      <label for="city">City</label>
+      <select id="city" name="city" required>
+        <option value="">-- Select your city --</option>
+        <option value="kuala_lumpur">Kuala Lumpur</option>
+        <option value="penang">Penang</option>
+        <option value="johor_bahru">Johor Bahru</option>
+        <option value="malacca">Malacca</option>
+        <option value="ipoh">Ipoh</option>
+        <option value="kota_kinabalu">Kota Kinabalu</option>
+        <option value="kuching">Kuching</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit">Save Profile</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Best for Less. All rights reserved.
+  </footer>
+
+</body>
+</html>
