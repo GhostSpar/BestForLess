@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best for Less</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fc;
+    }
+
+    header {
+      background-color: #0b1d3a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    header .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .tagline {
+      background-color: #11294d;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      background-color: #e3e8f0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0b1d3a;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-color: #1f3b64;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .categories {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .categories h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0b1d3a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      max-width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #1f2d3d;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #0b1d3a;
+      color: #99aabb;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Best for Less</div>
+    <div>
+      <a href="#" style="color:white; margin-right: 15px;">Login</a>
+      <a href="#" style="color:white;">Sign Up</a>
+    </div>
+  </header>
+
+  <div class="tagline">Where Value Meets Smart Choices</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Deals</a>
+    <a href="#">Categories</a>
+    <a href="#">Track Order</a>
+    <a href="#">Support</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Big Savings on Second-Hand Items!</h2>
+    <p>Phones, Laptops, Car Parts, Fashion & More – Up to 70% Off!</p>
+  </div>
+
+  <section class="categories">
+    <h3>Shop by Category</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/smartphone.png" alt="Phones"/>
+        <p>Phones</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/laptop.png" alt="Laptops"/>
+        <p>Laptops</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/car.png" alt="Car Parts"/>
+        <p>Car Parts</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/t-shirt.png" alt="Clothing"/>
+        <p>Clothing</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/jewelry.png" alt="Accessories"/>
+        <p>Accessories</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/home.png" alt="Home Appliances"/>
+        <p>Home Appliances</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/stroller.png" alt="Baby & Kids"/>
+        <p>Baby & Kids</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/sports.png" alt="Sports Gear"/>
+        <p>Sports & Outdoor</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/fluency/48/000000/controller.png" alt="Games & Consoles"/>
+        <p>Games & Consoles</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Best for Less. All rights reserved.
+  </footer>
+
+</body>
+</html>
